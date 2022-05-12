@@ -34,6 +34,8 @@ public class Login extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
+        setLocation(new java.awt.Point(500, 200));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prateleira/images/logo.png"))); // NOI18N
 
