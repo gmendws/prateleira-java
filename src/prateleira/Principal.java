@@ -54,6 +54,11 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prateleira/images/adicionar-produto.png"))); // NOI18N
         jMenuItem2.setText("Produto");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/prateleira/images/servicos-medicos.png"))); // NOI18N
@@ -124,6 +129,12 @@ public class Principal extends javax.swing.JFrame {
         vendas.setLocationRelativeTo(null);
         vendas.setVisible(true);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        Produto produto = new Produto();
+        produto.setLocationRelativeTo(null);
+        produto.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
